@@ -1,14 +1,12 @@
 import * as React from 'react';
 import { StyleSheet } from 'react-native';
-
-import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 import { RootTabScreenProps } from '../types';
 
-export default function TabTwoScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
+export default function TabThreeScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
   return (
     <View style={styles.container}>
-      <Text >Tab Two</Text>
+      <Text >TabThree</Text>
     </View>
   );
 }
