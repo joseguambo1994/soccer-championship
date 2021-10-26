@@ -13,6 +13,7 @@ export default {
     green: '#009345',
     lightGray: '#e0e0e0',
     darkGray: '#cccccc',
+    white:'#FFFFFF'
 
   },
   dark: {
@@ -26,5 +27,6 @@ export default {
     green: '#009345',
     lightGray: '#e0e0e0',
     darkGray: '#cccccc',
+    white:'#FFFFFF'
   },
 };
