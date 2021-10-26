@@ -2,13 +2,19 @@ import * as React from 'react';
 import { StyleSheet, TextInput, TouchableOpacity } from 'react-native';
 import { Text, View } from '../components/Themed';
 import Colors from '../constants/Colors';
-import { RootTabScreenProps } from '../types';
 
-export default function TeamItemComponent() {
+interface HourInfo {
+    name : string;
+    category: string;
+  }
+
+export default function TeamItemComponent(props:HourInfo) {
   return (
     <View style={styles.container}>
         <TouchableOpacity style={styles.itemContainer}>
-            <Text style={styles.itemText}>Equipo 1</Text>
+            <Text style={styles.itemText}>{props.name}</Text>
+            
+            <Text style={styles.itemText}>{props.category}</Text>
         </TouchableOpacity>
     </View>
   );
@@ -20,7 +26,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   itemContainer:{
-      flex:1,
+      width:300,
+      height: 400,
       backgroundColor: Colors.dark.white,
       margin: 10,
       borderRadius: 15,
